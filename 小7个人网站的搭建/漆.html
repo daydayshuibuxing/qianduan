@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到小漆的个人网页</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-weight: 800;
+            text-shadow: 5px 5px 5px ;
+            color:#790601
+        }
+
+        *{margin:0;padding:0}
+        html,body{
+            width:100%;
+            height:100%;
+            position:relative;
+        }
+        ul{list-style:none;}
+        .juzhong{
+            position:absolute;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            margin:auto;
+        }
+        .lunbotu{
+            width:400px;
+            height:300px;
+            border:1px solid #d5d5d5;
+        }
+        .images li{
+            position:absolute;
+            opacity:0;
+        }
+        .btn{
+            width: 25px;
+            height: 30px;
+            background-color: #cccccc;
+            line-height: 30px;
+            text-align:center;
+            opacity:0;
+            transition: .3s;
+            cursor:pointer;
+        }
+        .btn:hover{
+            background-color: #b3b2b2;
+            color:#fff;
+        }
+        .prev,
+        .next{
+            position:absolute;
+            top:50%;
+            transform:translateY(-50%);
+            border-radius:0 5px 5px 0;
+        }
+        .next{
+            right:0;
+            border-radius:5px 0 0 5px;
+        }
+        .lunbotu:hover.btn{
+            opacity:1;
+        }
+        .points{
+            position:absolute;
+            width:110px;
+            height:18px;
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
+            background-color:#ffffff60;
+            bottom:5px;
+            left:50%;
+            transform:translateX(-50%);
+            border-radius:10px;
+        }
+        .points li{
+            width:12px;
+            height:12px;
+            border-radius:50%;
+            background-color: #c2b9b9;;
+        }
+        .points li hover{
+            background-color: #fff;
+        }
+    </style>
+    <script src="<https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>"
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <h1 >欢迎来到小漆的个人网页</h1>
+    <div class="top">
+        <div class="logo">
+            <img src="https://images.cnblogs.com/cnblogs_com/blogs/771407/galleries/2228030/t_221011123643_%E8%87%AA%E7%94%BB%E5%83%8F.jpg" alt="动漫自画像">
+    </div>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="我热爱的.html" target="_black">我热爱的</a>
+            </li>
+            <li>
+                <a href="小时候.html" target="_black">个人简介</a>
+            </li>
+            <li>
+                <a href="学习过程记录.html" target="_black">学习过程的记录</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+                <div class="lunbotu juzhong">
+                    <ul class="images">
+                        <li style="opacity:1;"class="image-item"><img src="https://m.qpic.cn/psc?/V13UgOA608Ihpo/ruAMsa53pVQWN7FLK88i5joifOwGo3tj2S.daWa3KewS3mvpc8MDygQiScvxzdeyljrzsWk4OmmLBVzB57mB9LECquOKxMVKCrHRBW.fwko!/mnull&bo=OAQoBDgEKAQBByA!&rf=photolist&t=5" alt=""/></li>
+                       <li class="image-item"><img src="https://m.qpic.cn/psc?/V13UgOA608Ihpo/ruAMsa53pVQWN7FLK88i5gjdKIBP*sgZbPt*pT7FDxQ.*gV2Kqt8iux74yOpWF.5JUXhTklvF*yjvJMy5Ax0a7*AUOetrfvFXIy*Ps5jX54!/mnull&bo=wAOvA8ADrwMBByA!&rf=photolist&t=5" alt=""/></li>
+                       <li class="image-item"><img src="https://m.qpic.cn/psc?/V13UgOA608Ihpo/ruAMsa53pVQWN7FLK88i5liNhJwR2leyVMb49lfFcJwmL2K0UaR3Q7IotoQEotwC4Sry1EKHGMl*CWbN8ogvt6AR2e8eQCxCe*c4jtYDjoU!/mnull&bo=wQOgBcEDoAUBByA!&rf=photolist&t=5" alt=""/></li>
+                       <li class="image-item"><img src="https://m.qpic.cn/psc?/V13UgOA608Ihpo/ruAMsa53pVQWN7FLK88i5gKcUwuS2iGoQhN4NNb6xwKap*KVHXQG0cqF49f5n10xUlg0vRQdJMHyB4XdnAGQ.0i1aNVkmz5QAoQu4a0Ije0!/mnull&bo=4QPVA.ED1QMBByA!&rf=photolist&t=5" alt=""/></li>
+                    </ul> 
+                        <div class="btn prev">&lt;</div>
+                        <div class="btn next">&gt;</div>
+                        <ul class="points">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                </div>
+                <script type="text/javascript">
+                 let index=0;
+                 let timer=setInterval(function(){
+                 index++;
+                 index=index%4;
+                 console.log(index);
+                 $('.images li').css('opacity',0);
+                 $('.images li').eq(index).css('opacity',1);
+                 },800)
+
+                 $('.lunbotu').mouseover(function(){
+                    clearInterval(timer);
+                 })
+                </script>
+    </class>
+</body>
+</html>

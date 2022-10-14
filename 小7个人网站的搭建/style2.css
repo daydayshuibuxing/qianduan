@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "microsoft yahei";
+}
+.top{
+    width:1280px;
+    height:140px;
+    margin:20px auto;
+    background-color:bisque ;
+
+}
+.logo{
+    float:left;
+}
+.logo img{
+    width:140px;
+    height:128px;
+}
+.box{
+    width:780px;
+    margin:auto;
+}
+
+.dy-tit{
+    height: 60px;
+    line-height: 60px;
+}
+.dy-tit p{
+    font-size:18px;
+    border-bottom: 3px solid #333;
+}
+.dy-list{
+    margin-top:30px;
+}
+.dy-list ul li{
+    list-style:none;
+    float:left;
+    width:280px;
+    margin-right:20px;
+}
+.dy-list ul li img{
+    width:100%;
+}

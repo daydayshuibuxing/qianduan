@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.banner{
+     width: 600px;
+     margin: auto;
+     border: 10px solid green;
+     height: 350px;
+     position: relative;
+     overflow: hidden;
+}
+.imgList img{
+     width: 600px;
+     height: 350px;
+}
+.imgList{
+    /* 绝对定位 */
+     position: absolute;
+    /* left:-600px; */
+    /* width: 2600px; */
+}
+.imgList li{
+     float:left;
+       margin-right: 20px;
+     list-style: none;
+}
+.circle{
+     position: absolute;
+     bottom: 15px;left:50%;
+     transform:translateX(-50%);}
+.circle a{
+     width: 15px;
+     height: 15px;
+     background: green;
+     display: block;
+     border-radius: 50%;
+     opacity: .8;
+     float: left;
+     margin-right: 10px;
+}
+.circle a.hover{
+     background: black;
+     opacity: .7;
+}

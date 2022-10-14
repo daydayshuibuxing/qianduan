@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+font-family: "microsoft yahei";
+}
+.top{
+    width: 1200px;
+    height: 124px;
+    margin: 0 auto;
+    background: bisque;
+    
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 140px;
+}
+.nav{
+    float: right;
+}
+.nav ul li{
+    list-style: none;
+    float: left;
+    width: 120px;
+    height: 124px;
+    line-height: 124px;
+    text-align:center;
+
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+}
+.nav ul li a:hover{
+        color: #790601}
+.focus{
+    position:relative;
+    width:1280px;
+    height: 455px;
+    background-color:purple;
+}
+.focus ul{
+    width:400%;
+}
+.focus ul li{
+    float: left;
+}

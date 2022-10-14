@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小7的学习记录</title>
+    <style  type="text/css">
+        #jl{            
+             text-align: center;     
+        }
+        #img{           
+            width: 1280px;
+            height: 500px;
+        }
+        #ol {
+            position: absolute;    
+            bottom: 90px;       
+            width: 300px;       
+            text-align: center;  
+            right: 15px;
+        }
+    </style>
+    <script type="text/javascript">
+        
+            var index=0;
+            var imgs=["https://photogz.photo.store.qq.com/psc?/V54WYhwh35lrq20vUSEC4dTy6B4aKboN/ruAMsa53pVQWN7FLK88i5gCaaUqOpWHC7cSGLAx2yHboDSXeuuUbeFPoqAoQs4*TMAb2MVgjUAb2zurspw0Y5hUEUs6GJqq.PQLLcXN6wKc!/mnull&bo=qgbAAwAAAAABB08!&rf=photolist&t=5","https://m.qpic.cn/psc?/V54WYhwh35lrq20vUSEC4dTy6B3iJ4lt/ruAMsa53pVQWN7FLK88i5gtqOnoIIQr*t*iphMCqtQ7r4i1W0nx7DIrfxlwytSJIHwu6*i8lfe9enDXKRj1cHdYbpBCzWpMmyN3YSngVPKE!/mnull&bo=oAVBBKAFQQQBByA!&rf=photolist&t=5","https://m.qpic.cn/psc?/V54WYhwh35lrq20vUSEC4dTy6B3iJ4lt/ruAMsa53pVQWN7FLK88i5gtqOnoIIQr*t*iphMCqtQ7r4i1W0nx7DIrfxlwytSJIHwu6*i8lfe9enDXKRj1cHdYbpBCzWpMmyN3YSngVPKE!/mnull&bo=oAVBBKAFQQQBByA!&rf=photolist&t=5","https://photogz.photo.store.qq.com/psc?/V54WYhwh35lrq20vUSEC4dTy6B4aKboN/ruAMsa53pVQWN7FLK88i5gCaaUqOpWHC7cSGLAx2yHb0BviaGqChKLEOYihMjbYGYvscjeZhE4c5Q0Ym7WfgJMn4.RuR0iKwZhrusMgBzcY!/mnull&bo=qgbAAwAAAAABB08!&rf=photolist&t=5",]; /*图片的地址 */
+            function gundong(){
+                document.getElementById("img").src=imgs[index];
+                index++;
+                if(index > 3){
+                    index=0;    
+                }
+            }
+          setInterval("gundong()",1000);  
+        
+        
+        
+                window.onload = function () {
+                
+                var c1 = document.getElementById("clk1");
+                var c2 = document.getElementById("clk2");
+                var c3 = document.getElementById("clk3");
+                var c4 = document.getElementById("clk4");
+        
+               
+                c1.onclick=function() {
+                    document.getElementById("img").src=imgs[0];
+                }
+                c2.onclick=function() {
+                    document.getElementById("img").src=imgs[1];
+                }
+                c3.onclick=function() {
+                    document.getElementById("img").src=imgs[2];
+                }
+                c4.onclick=function() {
+                    document.getElementById("img").src=imgs[3];
+                }
+            }
+        </script>
+        
+</head>
+<body>
+    <h1 text-align="center">学习记录</h1>
+    <div>
+        <div id="jl">
+            <img src="https://m.qpic.cn/psc?/V54WYhwh35lrq20vUSEC4dTy6B3iJ4lt/ruAMsa53pVQWN7FLK88i5gtqOnoIIQr*t*iphMCqtQ6jjgH6EBHBvhdc7FmenTJbmIxAXGtc5UXkdMZgnUwbXHQZaN4GtR22qtCeHEMEItg!/mnull&bo=iQlABokJQAYBByA!&rf=photolist&t=5"id="img" />
+        </div>
+        <ul id="ol">
+            <li style="display: inline-block;margin: 0 5px;"><img src="https://photogz.photo.store.qq.com/psc?/V54WYhwh35lrq20vUSEC4dTy6B4aKboN/ruAMsa53pVQWN7FLK88i5gCaaUqOpWHC7cSGLAx2yHboDSXeuuUbeFPoqAoQs4*TMAb2MVgjUAb2zurspw0Y5hUEUs6GJqq.PQLLcXN6wKc!/mnull&bo=qgbAAwAAAAABB08!&rf=photolist&t=5" id="clk1"></li>
+            <li style="display: inline-block;margin: 0 5px;"><img src="https://m.qpic.cn/psc?/V54WYhwh35lrq20vUSEC4dTy6B3iJ4lt/ruAMsa53pVQWN7FLK88i5gtqOnoIIQr*t*iphMCqtQ7r4i1W0nx7DIrfxlwytSJIHwu6*i8lfe9enDXKRj1cHdYbpBCzWpMmyN3YSngVPKE!/mnull&bo=oAVBBKAFQQQBByA!&rf=photolist&t=5" id="clk2"></li>
+            <li style="display: inline-block;margin: 0 5px;"><img src="https://m.qpic.cn/psc?/V54WYhwh35lrq20vUSEC4dTy6B3iJ4lt/ruAMsa53pVQWN7FLK88i5tv1AX7Ki1J8aW4HtDpj2ROGpIvtv3pGdiClvs2rqkWgdx7eRkxtxG3N7vhRpVnCCB9x7uGuUjYFGkGZ64z*7*0!/mnull&bo=4w1ABuMNQAYBByA!&rf=photolist&t=5" id="clk3"></li>
+            <li style="display: inline-block;margin: 0 5px;"><img src="https://m.qpic.cn/psc?/V54WYhwh35lrq20vUSEC4dTy6B3iJ4lt/ruAMsa53pVQWN7FLK88i5gtqOnoIIQr*t*iphMCqtQ6jjgH6EBHBvhdc7FmenTJbmIxAXGtc5UXkdMZgnUwbXHQZaN4GtR22qtCeHEMEItg!/mnull&bo=iQlABokJQAYBByA!&rf=photolist&t=5" id="clk4"></li>
+        </ul>
+    </div>
+    <ol>
+        <h4>b站pink老师爱上我</h4>
+        <p>在b站上跟随pink老师了解html和css，学习网站的架构以及基础css的相关语言</p>
+        <p>首先学习html标签，html语法规范，html基本结构标签</p>
+        <img  height=300px width=680px src="http://a1.qpic.cn/psc?/V54WYhwh35lrq20vUSEC4dTy6B3iJ4lt/ruAMsa53pVQWN7FLK88i5hUFe2bdpvUrc*eKizewyxK43X52*y.U0K6q092xjsne39VyQ6YcLAN3UX97eTlkpAfhTuidLQpE8.80FNGlcTE!/c&ek=1&kp=1&pt=0&bo=4w1ABuMNQAYBJwA!&tl=3&vuin=1246047393&tm=1665745200&dis_t=1665747495&dis_k=8ecae7012ccc3c8ac82b87d28a079be3&sce=60-2-2&rf=0-0">
+        <h4>巧妇难为无米之炊之邂逅vscode</h4>
+        <p>小7同学邂逅了一个新朋友——vscode，信心满满地学习了vscode插件的使用等基本操作</p>
+        <img height=300px width=680px src="https://m.qpic.cn/psc?/V54WYhwh35lrq20vUSEC4dTy6B3iJ4lt/ruAMsa53pVQWN7FLK88i5hUFe2bdpvUrc*eKizewyxKV8Ts5s26eb7lA0mq75SfUGzjqItLPWuBBAtuQV5duuFcmTMbFLtQZgO3b0hBDRQk!/mnull&bo=4w1ABuMNQAYBByA!&rf=photolist&t=5">
+        <h4>在菜鸟教程上查看相关资料</h4>
+        <p>聪明的小7发现菜鸟教程上有更加清晰的有关html,css,javascript的内容，而且看时候的速度更加快，学习更加高效。</p>
+        <img height=300px width=680px src="https://m.qpic.cn/psc?/V54WYhwh35lrq20vUSEC4dTy6B3iJ4lt/ruAMsa53pVQWN7FLK88i5jxPW6r409tVKoaWZyDxt*8u.uo0F3q*MYYYscEqX2wbTp6LoXhIJb1EIsWMo6NOxBRbWwzmjy5wtOv1PSafbbo!/mnull&bo=4w1ABuMNQAYBByA!&rf=photolist&t=5">
+        <h4 text-align="center">在CSDN上自学轮播图</h4>
+        <p>某一天，小7同学深夜打开网抑云准备深夜emo时，黑暗中的她突然看到了网易云首页的轮播的推荐音乐，聪明的她脑瓜子一想，为何不把这个功能加到我自己的网页呢？这样不仅能使网页更加高级，甚至说不定能使焦糖的学长学姐们也对小7大加赞赏。</p>
+        <p>小7同学是典型的三分钟热度选手，当即兴奋得睡不着，蹑手蹑脚地爬下床去打开电脑，开始在csdn上搜索轮播图</p>
+        <img height=300px width=680px src="https://m.qpic.cn/psc?/V54WYhwh35lrq20vUSEC4dTy6B3iJ4lt/ruAMsa53pVQWN7FLK88i5u*JCYBCzUvcyRK3qZJ9DufzFU0eL8PX5jw4R3w5gx538teczERDZCWp7oBfQKH7ITsPsk7X3UShG7SqskVCRyw!/mnull&bo=4w1ABuMNQAYBByA!&rf=photolist&t=5">
+        <p>学习轮播图可以说是小7前端学习中最大一个障碍，CSDN上高手如云，八仙过海各显神通，小7在一片轮播图海洋里挑花了眼。跟着这位大佬敲的代码图片不能动，跟着那位大佬敲的代码轮播图的小圆点又显示不出来。每当看到自己辛辛苦苦敲了3的小时的代码跑不起来，只能全部删掉，小7只能攥紧拳头。</p>
+        <img src="http://a1.qpic.cn/psc?/V54WYhwh35lrq20vUSEC4dTy6B3iJ4lt/ruAMsa53pVQWN7FLK88i5gfncO2AWh6hlkArYtXR7eVA8ONVwY1vSf8.gHwYJgjlFHTTPPs11b2keLgubNaFljCTHuXn6QjN5PXlRKidKGY!/c&ek=1&kp=1&pt=0&bo=fgF.AX4BfgEBFzA!&tl=3&vuin=1246047393&tm=1665748800&dis_t=1665750172&dis_k=d03fffada73ee33bd3e2cb58d05948e8&sce=60-2-2&rf=0-0">
+        <h4>警报！！遭遇学习最大敌人--国庆假期</h4>
+        <p>国庆假期小7可是好好给祖国母亲庆祝生日了</p>
+        <img src="https://m.qpic.cn/psc?/V54WYhwh35lrq20vUSEC4dTy6B3iJ4lt/ruAMsa53pVQWN7FLK88i5iOuP9egsv6HrW5gJwXjG4lQ0jItWUkQmn0yV9R36gJxpEiUhutXx.77MmgSf1KK*MbtEeSEVxhTgRyijp0gLOs!/mnull&bo=OAQ4BDgEOAQBByA!&rf=photolist&t=5">
+        <h4>在菜鸟教程上学习javascript</h4>
+        <p>国庆假期回来后，意识到ddl越来越近的小7同学知道仅仅凭借自己匮乏的html和css知识不能胜任一个网页的制作，所以她打开菜鸟教程，开始自学javascript。</p>
+        <img height=300px width=680px src="https://m.qpic.cn/psc?/V54WYhwh35lrq20vUSEC4dTy6B3iJ4lt/ruAMsa53pVQWN7FLK88i5jxPW6r409tVKoaWZyDxt*8u.uo0F3q*MYYYscEqX2wbTp6LoXhIJb1EIsWMo6NOxBRbWwzmjy5wtOv1PSafbbo!/mnull&bo=4w1ABuMNQAYBByA!&rf=photolist&t=5">
+        <h4>开通博客园个人博客</h4>
+        <p>发现本地的照片不能直接上传显示在网页上，于是找到一个叫做博客园的网站，申请建立个人博客，然后上传图片，就有了本地图片的上传网址</p>
+        <img height=300px width=680px src="https://m.qpic.cn/psc?/V54WYhwh35lrq20vUSEC4dTy6B3iJ4lt/ruAMsa53pVQWN7FLK88i5gVI7EkpPzKVJIogL93P6HEtVqtWgo50NJFiIc.zivh23dG4CS0yiDqslKovB*PSRJXrbO7zeLqtx7Y*582jrf8!/mnull&bo=4w1ABuMNQAYBByA!&rf=photolist&t=5">
+        <h4>学习javascript</h4>
+        <p>javascript分为javascript语法，页面文档对象模型，浏览器对象模型。以及了解了js输入输出语句，数据类型等方面的知识</p>
+        <img  height=300px width=680px  src="http://a1.qpic.cn/psc?/V54WYhwh35lrq20vUSEC4dTy6B3iJ4lt/ruAMsa53pVQWN7FLK88i5mUwdmAPnP354*pB5h.nyHwl1o47A2SRAXqOIMcbMyFb3ePSapVRu.CecPnJWSUCktASrzKujz8cWo0YdF.G5gQ!/c&ek=1&kp=1&pt=0&bo=4w1ABuMNQAYBFzA!&tl=3&vuin=1246047393&tm=1665748800&dis_t=1665751019&dis_k=bbd12f8109afb4f843a6abbdc0097c6f&sce=60-2-2&rf=0-0">
+
+        <p><a href="评论.html">来给我写写评论吧</a></p>
+        <h1>学习前端总结</h1>
+        <p>对各种网页有了全新的认识。在没有接触过前端时，将网页的一切功能比如导航栏，轮播图，搜索功能等习以为常，但在学习前端的一个月的一步步学习中，明白网页的布局，各个网页间的调动，图片展示都是如此的有讲究有学问。学习是如此能够开阔眼界，伟人们诚不欺我。</p>
+        <p>以后小7同学也希望能够继续学习前端相关知识，如果能够有幸进入焦糖也希望能够广泛地学习前端，后端机器学习相关知识。</p>
+        <p>谢谢各位学长学姐们出的用心难倒我们的招新题，感恩与焦糖的遇见！</p>
+        <img height=600px width=800px src="http://a1.qpic.cn/psc?/V54WYhwh35lrq20vUSEC4dTy6B3iJ4lt/ruAMsa53pVQWN7FLK88i5mbZLSNnlWsDku4ovwcjM3Rojcv*Teu1MkPfpJK5k6VU7.0jdX.GpW24l8kC8vBcL*FI9sVbfHQ3s5SwqeYUlfk!/c&ek=1&kp=1&pt=0&bo=oAWsBaAFrAUBFzA!&tl=3&vuin=1246047393&tm=1665748800&dis_t=1665749630&dis_k=4ff969e0e1077abc81093285b7fdc165&sce=60-2-2&rf=0-0">
+
+
+    </ol>
+</body>
+</html>
